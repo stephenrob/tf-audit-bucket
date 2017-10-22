@@ -70,3 +70,8 @@ variable "s3_audit_bucket_expiration_non_current" {
     default = 455
     description = "Days until non current version object is expired and deleted"
 }
+
+variable "ct_account_id_list" {
+    type = "list"
+    description = "List of account ids to allow writing of cloudtrail logs to the audit bucket"
+}
